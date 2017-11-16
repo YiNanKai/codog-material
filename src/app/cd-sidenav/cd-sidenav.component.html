@@ -1,0 +1,12 @@
+<mat-sidenav-container class="cd-sidenav-container">
+
+  <mat-sidenav #sidenav>
+    <nav>menu1</nav>
+    <nav>menu2</nav>
+    <nav>menu3</nav>
+
+  </mat-sidenav>
+  <div>
+    <button mat-raised-button color="accent" (click)="sidenav.open()">Open</button>
+  </div>
+</mat-sidenav-container>

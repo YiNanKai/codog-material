@@ -10,7 +10,9 @@ import {SharedModule} from './shared.module';
 // root router
 import {CdRoutingModule} from './cd-routing/cd-routing.module';
 // all modules
-import {CdToolbarModule} from './cd-toolbar/cd-toolbar.module'
+import {CdToolbarModule} from './cd-toolbar/cd-toolbar.module';
+
+import {CdSidenavModule} from './cd-sidenav/cd-sidenav.module';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import {CdToolbarModule} from './cd-toolbar/cd-toolbar.module'
     SharedModule,
 
     CdToolbarModule,
-    CdRoutingModule
+    CdRoutingModule,
+
+    CdSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,11 +3,11 @@ import {MatSlideToggleModule,MatMenuModule,MatTooltipModule,MatButtonModule,MatS
 import {FormsModule} from '@angular/forms';
 @NgModule({
     exports:[
+        MatSidenavModule,
         MatTooltipModule,
         MatSlideToggleModule,
         MatButtonModule,
         MatMenuModule,
-        MatSidenavModule,
         MatToolbarModule,
         MatIconModule,
         FormsModule
