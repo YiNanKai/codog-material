@@ -12,8 +12,9 @@ import {CdRoutingModule} from './cd-routing/cd-routing.module';
 // all modules
 import {CdToolbarModule} from './cd-toolbar/cd-toolbar.module';
 
-import {CdSidenavModule} from './cd-sidenav/cd-sidenav.module';
+import {CdToolMusicModule} from './cd-tool-music/cd-tool-music.module';
 
+import {CdSidenavModule} from './cd-sidenav/cd-sidenav.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {CdSidenavModule} from './cd-sidenav/cd-sidenav.module';
     SharedModule,
 
     CdToolbarModule,
+    CdToolMusicModule,
     CdRoutingModule,
 
     CdSidenavModule

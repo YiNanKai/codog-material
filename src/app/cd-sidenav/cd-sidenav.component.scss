@@ -1,11 +1,35 @@
 :host {
-    position: absolute;
-    top: 64px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: block;
+    height: calc(100vh - 64px);
+    .cd-sidenav-container {
+        height: 100%;
+        mat-sidenav {
+            width: 250px;
+            overflow: hidden;
+            mat-nav-list {
+                mat-list-item ::ng-deep .mat-list-item-content {
+                    padding: 0 40px;
+                    a{
+                        line-height: 48px;
+                        display: block;
+                        .menu-name {
+                            margin-left: 20px;
+                        }
+                    }
+                }
     
+                
+            }
+        }
+    }
 }
-.cd-sidenav-container {
-    height: 100%;
+
+
+
+
+
+@media (max-width: 600px) {
+     :host {
+        top: 56px;
+    }
 }

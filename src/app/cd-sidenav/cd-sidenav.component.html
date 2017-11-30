@@ -1,12 +1,34 @@
 <mat-sidenav-container class="cd-sidenav-container">
+  <mat-sidenav #sidenav mode="over" opened="true">
+    <perfect-scrollbar>
+      <mat-nav-list>
+        <h3 mat-subheader>Blogs</h3>
+        <mat-list-item *ngFor="let blog of blogs">
+          <a routerLink="{{blog.routeLink}}">
+            <i [class]="blog.iconClass"></i>
+            <span class="menu-name">{{blog.name}}</span>
+          </a>
 
-  <mat-sidenav #sidenav>
-    <nav>menu1</nav>
-    <nav>menu2</nav>
-    <nav>menu3</nav>
+        </mat-list-item>
 
+        <h3 mat-subheader>Tools</h3>
+        <mat-list-item *ngFor="let tool of tools">
+          <a routerLink="{{tool.routeLink}}">
+              <i [class]="tool.iconClass"></i>
+              <span class="menu-name">{{tool.name}}</span>
+          </a>
+          
+        </mat-list-item>
+        <h3 mat-subheader>About</h3>
+        <mat-list-item *ngFor="let about of abouts">
+          <i [class]="about.iconClass"></i>
+          <span class="menu-name">{{about.name}}</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </perfect-scrollbar>
   </mat-sidenav>
   <div>
-    <button mat-raised-button color="accent" (click)="sidenav.open()">Open</button>
+    <button mat-raised-button color="accent" (click)="sidenav.toggle()">Open</button>
+    <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>
