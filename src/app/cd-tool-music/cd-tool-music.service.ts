@@ -12,7 +12,7 @@ export class CdToolMusicService{
 
     getAllAudios():Promise<any>{
 
-        return this.http.get('http://localhost:3000/audio/all')
+        return this.http.get('https://jsonplaceholder.typicode.com/albums')
                         .toPromise()
                         .then(res => res.json().data)
     }
