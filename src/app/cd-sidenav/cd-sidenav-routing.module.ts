@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CdSidenavComponent } from './cd-sidenav.component';
+import { CdBlogComponent } from '../cd-blog/cd-blog.component';
 const routes: Routes = [
-    
+    {
+        path: 'html',
+        component: CdBlogComponent
+    },
+    {
+        path: 'css',
+        component: CdBlogComponent
+    }
 ]
 
 @NgModule({
